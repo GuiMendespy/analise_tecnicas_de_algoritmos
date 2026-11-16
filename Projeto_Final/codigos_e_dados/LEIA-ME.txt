@@ -1,0 +1,6 @@
+Reproducao
+1) git clone https://github.com/networkx/networkx && cd networkx && git checkout e59d71890e745effb3724dc4b5620b23f92e0ee3
+2) Experimentos A-D (codigo original):   PYTHONPATH=<repo> python benchmark.py D B C A
+3) Bonus: git checkout -b bonus-lazy-init && git apply bonus_lazy_init_completo.patch
+   Rode "python bonus.py original" no commit original e "python bonus.py lazy" na branch (alternando duas rodadas).
+4) Testes: pip install pytest && pytest networkx/algorithms/centrality networkx/algorithms/tests  (2319 passam com o patch)
